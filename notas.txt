@@ -1,0 +1,5 @@
+__init__.py -->  indica que esto es un modulo de pithon
+settings.py --> aca podemos agregar o modificar las configuraciones de la aplicacion 
+urls.py --> podemos crear funciones de url
+wsg.py --> es un servidor de aplicaciones 
+manage.py --> gestiona comunicacion con la terminal
