@@ -1,5 +1,53 @@
+para utilizar django:
+
+*instalar virtualenv
+*crear un nuevo entorno virtual de la siguiente manera:
+	-virtualenv ‘nombre del proyecto’
+*activar el entorno virtual utilizando el siguiente comando:
+	- source /bin/activate
+*instalar Django en el entorno virtual
+	- pip install django
+*iniciamos nuestro proyecto con Django utilizando el siguiente comando:
+	-django-admin.py startproject ‘nombre del proyecto’
+*Esto generará una carpeta con el nombre del proyecto donde se encuentra el fabuloso manage.py
+
+SERVIDOR:
+
+*Levantemos el servidor primero. Nos direccionamos en la carpeta del proyecto Django con el comando:
+	-cd ‘nombre del proyecto’ 
+	-python manage.py runserver
+*en el navegador ponemos 127.0.0.1/8000
+
+
+COMANDOS:
+mostrar lo que tengo instalado: 
+$ pip freeze 
+
+para instalar diferentes versiones de Django con pip podemos hacerlo de la siguiente manera:
+$ pip install django==1.8
+
+crear un nuevo proyecto
+$ django-admin.py startproject 'nombre del proyecto'
+
+hacer un listado de los requerimientos del proyecto
+$ pip freeze > requeriments.txt
+
+instalar el listado de los requerimientos
+$ pip install -r requeriments-txt
+
+iniciar un servidor de pruebas dentro del entorno virtual:
+$manage.py runserver
+
+hacer migraciones de las bases de datos
+$ python manage.py migrate
+
+iniciar nustra app
+$ python manage.py startapp 'nombre de la app'
+
 __init__.py -->  indica que esto es un modulo de pithon
 settings.py --> aca podemos agregar o modificar las configuraciones de la aplicacion 
 urls.py --> podemos crear funciones de url
 wsg.py --> es un servidor de aplicaciones 
 manage.py --> gestiona comunicacion con la terminal
+
+-Los modulos en python los llamaremos con minusculas para poder diferenciarlos
